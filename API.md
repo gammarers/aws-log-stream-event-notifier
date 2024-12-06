@@ -9,13 +9,14 @@
 ```typescript
 import { LogStreamEventNotifier } from '@gammarers/aws-log-stream-event-notifier'
 
-new LogStreamEventNotifier(scope: Construct, id: string)
+new LogStreamEventNotifier(scope: Construct, id: string, props: LogStreamEventNotifierProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifier.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
 | <code><a href="#@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifier.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifier.Initializer.parameter.props">props</a></code> | <code><a href="#@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifierProps">LogStreamEventNotifierProps</a></code> | *No description.* |
 
 ---
 
@@ -28,6 +29,12 @@ new LogStreamEventNotifier(scope: Construct, id: string)
 ##### `id`<sup>Required</sup> <a name="id" id="@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifier.Initializer.parameter.id"></a>
 
 - *Type:* string
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifier.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifierProps">LogStreamEventNotifierProps</a>
 
 ---
 
@@ -94,6 +101,46 @@ The tree node.
 ---
 
 
+## Structs <a name="Structs" id="Structs"></a>
+
+### LogStreamEventNotifierProps <a name="LogStreamEventNotifierProps" id="@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifierProps"></a>
+
+#### Initializer <a name="Initializer" id="@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifierProps.Initializer"></a>
+
+```typescript
+import { LogStreamEventNotifierProps } from '@gammarers/aws-log-stream-event-notifier'
+
+const logStreamEventNotifierProps: LogStreamEventNotifierProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifierProps.property.notificationTopic">notificationTopic</a></code> | <code>aws-cdk-lib.aws_sns.ITopic</code> | *No description.* |
+| <code><a href="#@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifierProps.property.requestFunction">requestFunction</a></code> | <code>aws-cdk-lib.aws_lambda.IFunction</code> | *No description.* |
+
+---
+
+##### `notificationTopic`<sup>Required</sup> <a name="notificationTopic" id="@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifierProps.property.notificationTopic"></a>
+
+```typescript
+public readonly notificationTopic: ITopic;
+```
+
+- *Type:* aws-cdk-lib.aws_sns.ITopic
+
+---
+
+##### `requestFunction`<sup>Required</sup> <a name="requestFunction" id="@gammarers/aws-log-stream-event-notifier.LogStreamEventNotifierProps.property.requestFunction"></a>
+
+```typescript
+public readonly requestFunction: IFunction;
+```
+
+- *Type:* aws-cdk-lib.aws_lambda.IFunction
+
+---
 
 
 
