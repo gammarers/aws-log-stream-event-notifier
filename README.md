@@ -1,5 +1,6 @@
 # AWS Log Stream Event Notifier
 
+[![GitHub](https://img.shields.io/github/license/gammarers/aws-log-stream-event-notifier?style=flat-square)](https://github.com/gammarers/aws-log-stream-event-notifier/blob/main/LICENSE)
 [![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/gammarers/aws-log-stream-event-notifier/release.yml?branch=main&label=release&style=flat-square)](https://github.com/gammarers/aws-log-stream-event-notifier/actions/workflows/release.yml)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/gammarers/aws-log-stream-event-notifier?sort=semver&style=flat-square)](https://github.com/gammarers/aws-log-stream-event-notifier/releases)
 
