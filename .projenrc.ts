@@ -9,7 +9,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: '@gammarers/aws-log-stream-event-notifier',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-log-stream-event-notifier.git',
-  releaseToNpm: false, // tmp
+  releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: '18.0.0',
   workflowNodeVersion: '22.4.x',
