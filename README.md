@@ -12,19 +12,19 @@ This AWS CDK Construct detects logs specified by a CloudWatch Logs subscription 
 #### install by npm
 
 ```shell
-npm install @gammarer/aws-log-stream-event-notifier
+npm install @gammarers/aws-log-stream-event-notifier
 ```
 
 #### install by yarn
 
 ```shell
-yarn add @gammarer/aws-log-stream-event-notifier
+yarn add @gammarers/aws-log-stream-event-notifier
 ```
 
 ## Example
 
 ```typescript
-import { LogStreamEventTrigger } from '@gammarer/aws-log-stream-event-notifier';
+import { LogStreamEventTrigger } from '@gammarers/aws-log-stream-event-notifier';
 
 declare const notificationTopic: sns.Topic;
 declare const requestFunction: lambda.Function;
